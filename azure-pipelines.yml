@@ -24,8 +24,9 @@ steps:
 
 - task: PublishTestResults@2
   inputs:
-    testResultsFiles: 'NodejsforAzure/tests/test.js'
+    testResultsFiles: '**/TEST-RESULTS.xml'
     testRunTitle: 'Test results for JavaScript using gulp'
+    testAssemblyVer2: 'NodejsforAzure/tests/'
 
 - task: PublishCodeCoverageResults@1
   inputs: 
