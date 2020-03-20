@@ -26,6 +26,7 @@ steps:
   inputs:
     testResultsFiles: '**/TEST-RESULTS.xml'
     testRunTitle: 'Test results for JavaScript using gulp'
+    failTaskOnFailedTests: true
 
 - task: PublishCodeCoverageResults@1
   inputs: 
